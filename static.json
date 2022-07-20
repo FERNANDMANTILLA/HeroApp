@@ -3,6 +3,7 @@
     "clean_urls": false,
     "routes": {
       "/**/": "index.html",
-      "/**/**/": "index.html"
+      "/**/**/": "index.html",
+      "/**/**/**/": "index.html"
     }
   }
