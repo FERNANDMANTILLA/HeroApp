@@ -11,16 +11,18 @@ export const SearchPage = () => {
   const {q}= queryString.parse(location.search);
 
   const {searchText,onInputChange} = useForm({
-    "searchText": "",
+    "searchText": q ? q : "",
   });
 
   const heroes = getHeroesByName(q);
-  console.log(heroes);
 
   const onSearchSubmit = (e) => {
     e.preventDefault();
     if(searchText.trim().length > 0){
       navigate(`?q=${searchText}`);
+    }
+    else {
+      navigate("");
     }
   }
 
@@ -44,9 +46,12 @@ export const SearchPage = () => {
         <div className="col-7">
           <h3>Results</h3>
           <hr />
-          <div className="alert alert-dark">Search for a Hero</div>
-          <div className="alert alert-danger">Not Found {q}</div>
-          <HeroCard hero="" />
+         { (heroes.length === 0) ? <div className="alert alert-dark">Search for a Hero</div> : ""}
+         { (heroes.length === 0) ? <div className="alert alert-danger">Not Found {q}</div> : ""}
+        { heroes.map((hero) => (
+          <HeroCard key={hero.id} hero={hero} />
+        ))}
+
         </div>
       </div>
     </div>

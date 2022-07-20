@@ -6,7 +6,7 @@ export const HeroCard = ({ hero }) => {
     const charactersByHero = <p className="shadow-text fz-1">{hero.characters }</p>;
 
     return (
-        <div className="col mb-3 ">
+        <div className="col mb-3 animate__animated animate__fadeInUp ">
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-4 ">
