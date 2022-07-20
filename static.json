@@ -5,5 +5,11 @@
       "/**": "index.html",
         "/**/**/": "index.html"
 
+    },
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      }
     }
   }
