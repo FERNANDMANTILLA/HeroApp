@@ -10,7 +10,7 @@ export const HeroCard = ({ hero }) => {
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-4 ">
-                        <img src={`/src/assets/heroes/${hero.id}.jpg`} className="card-img h-100 object-fit" alt={hero.superhero} />
+                        <img src={`./src/assets/heroes/${hero.id}.jpg`} className="card-img h-100 object-fit" alt={hero.superhero} />
                     </div>
 
                     <div className="col-8">
@@ -32,7 +32,7 @@ export const HeroCard = ({ hero }) => {
                                 </small>
                             </p>
 
-                            <Link to={`./hero/${hero.id}`} className="text-info">
+                            <Link to={`/hero/${hero.id}`} className="text-info">
                                 Ver más
                             </Link>
 
