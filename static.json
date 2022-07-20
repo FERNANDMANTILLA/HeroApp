@@ -2,8 +2,8 @@
     "root": "./docs",
     "clean_urls": false,
     "routes": {
-      "/**": "index.html",
-        "/**/**/": "index.html"
+      "https://heroapp-react.herokuapp.com//**": "index.html",
+        "https://heroapp-react.herokuapp.com//**/**/": "index.html"
 
     }
   }
