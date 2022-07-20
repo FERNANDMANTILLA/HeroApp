@@ -32,7 +32,7 @@ export const HeroCard = ({ hero }) => {
                                 </small>
                             </p>
 
-                            <Link to={`/hero/${hero.id}`} className="text-info">
+                            <Link to={`./hero/${hero.id}`} className="text-info">
                                 Ver más
                             </Link>
 
