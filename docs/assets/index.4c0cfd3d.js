@@ -10103,7 +10103,7 @@ const C = Po.exports.jsx,
             C("div", {
               className: "col-3",
               children: C("img", {
-                src: `/src/assets/heroes/${r.id}.jpg`,
+                src: `../public/heroes/${e.id}.jpg`,
                 alt: r.superhero,
                 className: "img-thumbnail",
               }),
