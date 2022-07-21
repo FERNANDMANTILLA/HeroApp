@@ -15,12 +15,7 @@ export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
 
-            <Link
-                className="navbar-brand"
-                to="/"
-            >
-                Asociaciones
-            </Link>
+
 
             <div className="navbar-collapse" >
                 <div className="navbar-nav">
@@ -48,9 +43,9 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul className="navbar-nav ml-auto">
 
+            <div className="navbar-collapse collapse">
+                <ul className="navbar-nav ml-auto">
                     <button className="btn btn-outline-info"
                         onClick={handleLogout}>
                         Logout
