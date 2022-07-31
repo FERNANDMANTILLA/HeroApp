@@ -49,6 +49,7 @@ html {
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 article,
